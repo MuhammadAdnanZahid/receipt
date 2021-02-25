@@ -72,7 +72,7 @@
             <div class="form-group" id="sitename_error">
               <h2 class="text-center"><?php echo $sd['business_name'];?></h2>
 
-              <input name="reciept_business" class="input-xlarge form-control" id="reciept_business" type="text" value="<?php echo $sd['business_name'];?>">
+              <input name="reciept_business" class="input-xlarge form-control" id="reciept_business" type="hidden" value="<?php echo $sd['business_name'];?>">
               
             </div>
              <div class="form-group">
@@ -81,7 +81,7 @@
              <div class="form-group">
               <h3 class="text-center" style="font-weight: bold"><?php echo $sd['product_name'];?></h3>
 
-              <input name="reciept_product" class="input-xlarge form-control" id="reciept_product" type="text" value="<?php echo $sd['product_name'];?>">
+              <input name="reciept_product" class="input-xlarge form-control" id="reciept_product" type="hidden" value="<?php echo $sd['product_name'];?>">
               
             </div>
            <div class="">
@@ -89,22 +89,22 @@
                 <div class="col-sm-4">
               <h3><?php echo $sd['product_color'];?></h3>
 
-              <input name="reciept_color" class="input-xlarge form-control" id="reciept_color" type="text" value="<?php echo $sd['product_color'];?>">
+              <input name="reciept_color" class="input-xlarge form-control" id="reciept_color" type="hidden" value="<?php echo $sd['product_color'];?>">
               
             </div>
             <div class="col-sm-3">
               <h3><?php echo $sd['product_size'];?></h3>
 
-              <input name="reciept_size" class="input-xlarge form-control" id="reciept_size" type="text" value="<?php echo $sd['product_size'];?>">
+              <input name="reciept_size" class="input-xlarge form-control" id="reciept_size" type="hidden" value="<?php echo $sd['product_size'];?>">
               
             </div>
              <div class="col-sm-5 text-right">
               <h3 style="">Rs. <?php echo $sd['product_price'];?></h3>
 
 
-              <input name="reciept_oldprice" class="input-xlarge form-control" id="reciept_oldprice" type="text" value="<?php echo $sd['product_oldprice'];?>">
+              <input name="reciept_oldprice" class="input-xlarge form-control" id="reciept_oldprice" type="hidden" value="<?php echo $sd['product_oldprice'];?>">
 
-              <input name="reciept_price" class="form-control" id="reciept_price" type="text" value="<?php echo $sd['product_price'];?>">
+              <input name="reciept_price" class="form-control" id="reciept_price" type="hidden" value="<?php echo $sd['product_price'];?>">
 
               <?php
               if ($sd['product_oldprice']!= 0) {
